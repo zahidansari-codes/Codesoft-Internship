@@ -36,7 +36,7 @@ The workspace is organized with a granular, clean structure to ensure modular tr
 A responsive personal portfolio showcasing clean UI structure and semantic HTML architecture.
 
 ### 🍔 Landing Page Clone
-A modern food delivery landing page design with background media integration and responsive layout system.
+A modern food delivery landing page design with background media integration and responsive layout systems.
 
 ### 🧮 Calculator App
 A functional JavaScript calculator with real-time input processing and event-driven logic.
