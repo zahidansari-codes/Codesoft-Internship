@@ -1,134 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="image/favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zahid Ansari - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header class="nav-head">
-        <div class="logo">
-            <h2>Online Portfolio</h2>
-            <h3>just another My Blog site</h3>
-        </div>
 
-        <nav class="navbar">
-            <ul class="icons">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT ME</a></li>
-                <li><a href="#">SERVICES</a></li>
-                <li><a href="#">SKILLS</a></li>
-                <li><a href="#">TESTIMONIAL</a></li>
-                <li><a href="#">EXPERIENCE</a></li>
-                <li><a href="#">WORKS</a></li>
-                <li><a href="#">BLOG</a></li>
-                <li><a href="#">CONTACT US</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Zahid Ansari</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="menu-btn" id="menuBtn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
 
-    <main class="main-sec">
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h1>Hello, I'm <span>Zahid Ansari</span></h1>
+      <h3>A First Year Student</h3>
+      <p>
+        Hi! I am Zahid Ansari, a Software Engineering student.
+        I enjoy learning new technologies and building creative projects.
+        This is my personal portfolio website.
+      </p>
+    </div>
+    <div class="hero-img">
+      <img src="image/profile.jpeg" alt="Zahid Ansari">
+    </div>
+  </section>
 
-        <!-- HERO SECTION -->
-        <section class="sec1">
-            <div class="hero-content">
-                <h1>Zahid Ansari</h1>
-                <p>
-                    Hi, I am Zahid Ansari, a passionate web developer learning full-stack development and building modern web projects.
-                </p>
-                <a href="#" class="btn-primary">Hire Me</a>
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2>About</h2>
+    <p>
+      I'm a First-Year Software Engineering student at NIAT, passionate about building modern and responsive web applications. Skilled in HTML, CSS, JavaScript, and React, I'm currently learning DSA, Full Stack Development, and AI. My goal is to become a Software Engineer who creates impactful digital solutions.
+    </p>
+  </section>
+
+  <!-- Education Section -->
+  <section class="education" id="education">
+    <h2>Education</h2>
+    <div class="edu-box">
+      <h3>B.Tech - Computer Science Engineering</h3>
+      <p>Vivekananda Global University (NIAT), Jaipur</p>
+      <p class="edu-year">Year: 2025-2029</p>
+    </div>
+    <div class="edu-box">
+      <h3>My Own School</h3>
+      <p>Class: 12th</p>
+      <p>Percentage: 79.8</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills" id="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>C++</span>
+      <span>DSA</span>
+      <span>Git</span>
+      <span>GitHub</span>
+      <span>VS Code</span>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+ <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="section-container">
+        
+        <h2 class="section-title" data-reveal="fade-up">Projects</h2>
+
+        <div class="projects-grid">
+          <article class="project-card featured tilt" data-reveal="zoom-in">
+            
+            <div class="project-image proj-portfolio">
+              <i class="fa-solid fa-diagram-project project-image-icon"></i>
             </div>
-        </section>
-
-        <!-- ABOUT SECTION -->
-        <section class="sec2">
-            <div class="about-img-container">
-                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e"
-                     alt="Zahid Ansari Profile Photo"
-                     class="about-img">
+            <div class="project-body">
+              <h3>Portfolio Website</h3>
+              <p>Modern responsive developer portfolio featuring premium animations, glassmorphism UI, smooth scrolling, interactive elements, and fully responsive design.</p>
+              <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              <div class="project-links">
+                <a href="#" class="btn btn-small btn-primary magnetic">Live Demo</a>
+                <a href="#" class="btn btn-small btn-ghost magnetic"><i class="fa-brands fa-github"></i> GitHub</a>
+              </div>
             </div>
+          </article>
 
-            <div class="about-content">
-                <h2>ABOUT ME</h2>
-
-                <p class="subtitle">
-                    I am Zahid Ansari, a web developer focused on frontend design and learning backend development.
-                </p>
-
-                <p class="description">
-                    With a strong foundation in HTML, CSS, and JavaScript, I build responsive and user-friendly websites. I am currently improving my full-stack development skills and working on real-world projects.
-                </p>
-
-                <a href="#" class="btn-submit">DOWNLOAD RESUME</a>
+          <article class="project-card tilt" data-reveal="fade-up">
+            <div class="project-image proj-weather">
+              <i class="fa-solid fa-cloud-sun project-image-icon"></i>
             </div>
-        </section>
-
-        <!-- SKILLS -->
-        <section id="skills" class="sec3">
-            <h2>MY SKILLS</h2>
-            <div class="skills-container">
-                <div class="skill-box">HTML</div>
-                <div class="skill-box">CSS</div>
-                <div class="skill-box">JavaScript</div>
-                <div class="skill-box">ReactJS</div>
-                <div class="skill-box">Node JS</div>
-                <div class="skill-box">MongoDB</div>
+            <div class="project-body">
+              <h3>Weather App</h3>
+              <p>Real-time weather application using the OpenWeather API with city search, humidity, wind speed, weather icons, a responsive UI, loading animation, and error handling.</p>
+              <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>OpenWeather API</span></div>
+              <div class="project-links">
+                <a href="#" class="btn btn-small btn-primary magnetic">Live Demo</a>
+                <a href="#" class="btn btn-small btn-ghost magnetic"><i class="fa-brands fa-github"></i> GitHub</a>
+              </div>
             </div>
-        </section>
+          </article>
 
-        <!-- PROJECTS -->
-        <section id="projects" class="sec4">
-            <h2>MY PROJECTS</h2>
-
-            <div class="projects-grid">
-
-                <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c"
-                         alt="Project 1"
-                         class="project-img">
-                    <div class="project-info">
-                        <h3>User Registration & Login System</h3>
-                        <p>Built using HTML, CSS, Java Servlets, JSP, MySQL and Apache Tomcat.</p>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d"
-                         alt="Project 2"
-                         class="project-img">
-                    <div class="project-info">
-                        <h3>E-Commerce & Food Delivery UI</h3>
-                        <p>Frontend clones using HTML5, CSS3 and responsive design principles.</p>
-                    </div>
-                </div>
-
+          <article class="project-card tilt" data-reveal="fade-up" data-reveal-delay="100">
+            <div class="project-image proj-todo">
+              <i class="fa-solid fa-list-check project-image-icon"></i>
             </div>
-        </section>
-
-        <!-- CONTACT -->
-        <section id="contact" class="sec5">
-            <h2>CONTACT ME</h2>
-
-            <p class="contact-text">
-                Feel free to reach out for collaborations or project inquiries!
-            </p>
-
-            <div class="contact-details">
-                <p><strong>Email:</strong> zahid9214759586@gmail.com</p>
-                <p><strong>Phone:</strong> +91 0123456789</p>
-                <p><strong>Location:</strong> India</p>
+            <div class="project-body">
+              <h3>To-Do App</h3>
+              <p>Modern task management app with local storage support — add, edit, delete, mark complete, and filter tasks, with everything persisting between visits.</p>
+              <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Local Storage</span></div>
+              <div class="project-links">
+                <a href="#" class="btn btn-small btn-primary magnetic">Live Demo</a>
+                <a href="#" class="btn btn-small btn-ghost magnetic"><i class="fa-brands fa-github"></i> GitHub</a>
+              </div>
             </div>
-        </section>
+          </article>
 
-    </main>
+          <article class="project-card tilt" data-reveal="fade-up" data-reveal-delay="200">
+            <div class="project-image proj-calculator">
+              <i class="fa-solid fa-calculator project-image-icon"></i>
+            </div>
+            <div class="project-body">
+              <h3>Calculator App</h3>
+              <p>Responsive calculator supporting all arithmetic operations, with full keyboard support and a clean, modern interface.</p>
+              <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              <div class="project-links">
+                <a href="#" class="btn btn-small btn-primary magnetic">Live Demo</a>
+                <a href="#" class="btn btn-small btn-ghost magnetic"><i class="fa-brands fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </article>
+       
+    </section>
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Contact</h2>
+    
 
-    <footer class="main-footer">
-        <p>&copy; 2026 Zahid Ansari. All Rights Reserved. | CodeSoft Internship Task</p>
-    </footer>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name">
+      <input type="email" id="email" placeholder="Your Email">
+      <textarea id="message" rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+      <p id="formMsg"></p>
+    </form>
 
+    <div class="contact-info">
+      <p>Email: zahid9214759586@gmail.com</p>
+      <p>Location: Jaipur, Rajasthan, India</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Zahid Ansari. All rights reserved.</p>
+  </footer>
+
+  <script src="index.js"></script>
 </body>
 </html>
