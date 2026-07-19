@@ -208,12 +208,14 @@ section {
   line-height: 1.5;
 }
 
-.project-link a {
+.project-links a {
   color: #14b8a6;
   font-weight: bold;
+  margin-right: 15px;
+  
 }
 .project-body {
-  margin-top: 10px;
+  margin-top: 20px;
    background-color: #ffffff;
   border-left: 4px solid #14b8a6;
   padding: 20px 25px;
