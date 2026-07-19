@@ -7,7 +7,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f2ede2;
+  background-color: #f0f4f8;
   color: #222;
   scroll-behavior: smooth;
 }
@@ -82,6 +82,7 @@ h2 {
   padding: 60px 80px;
   flex-wrap: wrap;
   gap: 40px;
+  background-color: #f8fafc;
 }
 
 .hero-text {
